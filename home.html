@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T@T - Tolets At Tirupati</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="./images/logo/logo.png" alt="logo">
+            <div class="logo">T@T</div>
+        </div>
+
+        <div class="search-bar">
+            <input type="search" placeholder="Search tolets...">
+            <button>search</button>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <header class="hero-sec">
+        <h1>Welcome to Tolets At Tirupati</h1>
+        <p>Find your perfect home, flat, or building easily.</p>
+    </header>
+
+    <section class="tolets">
+        <h2>Available Tolets</h2>
+        <div class="grid">
+            <div class="tolet-cards">
+                <img src="./images/tolet1 imgs/office main.jpg" alt="">
+                <h3>Office Room in Korlagunta</h3>
+                <p>₹15k/month</p>
+                <a href="tolet1.html">View details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="#" method="POST">
+
+            <label for="name">Your Name :</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email ID :</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone.No :</label>
+            <input type="tel" id="phone" required>
+
+            <label for="msg">Message</label>
+            <textarea id="msg" required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+            <div class="contact-info">
+                <h3>Site Owner Info</h3>
+                <p><strong>Name:</strong>V.Saran</p>
+                <p><strong>Email:</strong>aspiringmind05@gmail.com</p>
+                <p><strong>Phone:</strong>+91 88862 00010</p>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <p> &copy 2025 T@T - Tolets At Tirupati
+
+        </p>
+    </footer>
+
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+
+</body>
+<script>
+    // Show/hide button on scroll
+    window.onscroll = function () {
+        const btn = document.getElementById("backToTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    // Smooth scroll to top
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2BHK Flat in Tiruchanoor - T@T</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="./images/logo/logo.png" alt="logo">
+            <div class="logo">T@T</div>
+        </div>
+
+        <!-- <div class="search-bar">
+            <input type="search" placeholder="Search tolets...">
+            <button>search</button>
+        </div> -->
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#owner">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- <nav class="navbar">
+        <div class="logo">T@T</div>
+        <a href="home.html" class="btn back-btn">← Back</a>
+    </nav> -->
+
+    <section class="details">
+        <h2 id="about">Office Room in Korlagunta</h2>
+        <img src="./images/tolet1 imgs/office main.jpg" alt="im1">
+        <img src="./images/tolet1 imgs/office1.jpg" alt="img2">
+        <img src="./images/tolet1 imgs/office2.jpg" alt="img3">
+        <img src="./images/tolet1 imgs/office3.jpg" alt="img4">
+        <p><strong>Rent:</strong> ₹15,000/month</p>
+        <p><strong>Location:</strong> Korlagunta </p>
+        <p><strong>Description:</strong> Single room with washroom, AC, wifi, Tables, chairs & CC cameras </p>
+
+        <div id="owner" class="owner-info">
+            <strong>Owner's Contact:</strong>
+            Owner: V.Saran <br>
+            Phone: <a href="tel:+918886200010">+91 88862 00010</a>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.323398278785!2d79.44029597554999!3d13.638081299915333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b2d38f6d102f43d%3A0xeac5fa9cbf43a276!2sSaredufy%20Web%20Plus%20Academy%20Private%20Limited!5e0!3m2!1sen!2sin!4v1756289844048!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p> &copy 2025 T@T - Tolets At Tirupati
+
+        </p>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()">↑ Back to Top</button>
+
+
+</body>
+<script>
+    // Show/hide button on scroll
+    window.onscroll = function () {
+        const btn = document.getElementById("backToTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    // Smooth scroll to top
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</html>
